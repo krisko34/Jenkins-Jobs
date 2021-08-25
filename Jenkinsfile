@@ -1,7 +1,21 @@
- stages {
-        stage("Run script") {
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
             steps {
-                echo zdr
+                echo 'Building..'
             }
         }
- }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
