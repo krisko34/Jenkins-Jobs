@@ -2,8 +2,8 @@ import slack
 import argparse
 from argparse import RawTextHelpFormatter
 
-SLACK_HOOK = "xoxb-504661073348-2408171036532-VyE9kpVc42h6nBGpY1rWwlCt"
-SLACK_CHANNEL = "cns_devices-alerts"
+SLACK_HOOK = ""
+SLACK_CHANNEL = ""
 
 def main(): 
     parser = argparse.ArgumentParser(
