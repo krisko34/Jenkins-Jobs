@@ -1,14 +1,19 @@
 pipeline {
-    agent {
-        docker {image 'pythondocker_app'}
-    }
-
+    agent any
     stages {
-        stage('Test') {
-            steps {
-                echo 'Testing..'
+        stage('Build') {
+            agent {
+                     docker {
+                         image 'pythondocker_app'
+                    }
+            }
             }
         }
+            stage('Test') {
+                steps {
+                    sh 'python --version'
+                }
+            }
         
     }
 }
