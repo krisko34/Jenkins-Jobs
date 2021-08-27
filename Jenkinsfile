@@ -5,7 +5,11 @@ pipeline {
             agent {
                 docker {
                     image 'pythondocker_app'
+                    reuseNode true
                 }
+            }
+            steps {
+                sh 'python --version'
             }
         }
     }
