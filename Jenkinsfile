@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+             docker run -it slackmessager python main.py -n "x" -num 5 -nea 4 -url "google.com"
             }
         }
         stage('Test') {
