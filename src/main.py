@@ -2,8 +2,8 @@ import slack
 import argparse
 from argparse import RawTextHelpFormatter
 
-SLACK_HOOK = ""
-SLACK_CHANNEL = ""
+SLACK_HOOK = "" #ADD SLACK HOOK ID
+SLACK_CHANNEL = "" #ADD SLACK CHANNEL ID
 
 def main(): 
     parser = argparse.ArgumentParser(
